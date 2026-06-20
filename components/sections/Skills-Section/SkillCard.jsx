@@ -6,8 +6,6 @@ const SkillCard = () => {
    return (
       <Card
          key={index}
-         // এখানে w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)] ব্যবহার করা হয়েছে
-         // যাতে বড় স্ক্রিনে ৪টি কার্ড থাকে কিন্তু শেষ লাইনে ২/৩টি থাকলে সেগুলো মাঝখানে থাকে।
          className="relative bg-slate-900/40 border-slate-800 pt-14 pb-8 px-5 group hover:bg-slate-900 transition-all duration-300 border-b-4 hover:border-b-amber-500 shadow-xl w-87.5 sm:w-[45%] lg:w-[23%]"
       >
          {/* Floating Icon Holder */}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BookOpen, Code, Heart, Laptop } from 'lucide-react';
-import ContainerLayout from '../layout/ContainerLayout';
-import AboutVisuals from '../common/AboutVisuals';
+import ContainerLayout from '../../layout/ContainerLayout';
+import AboutVisuals from './AboutVisuals';
 
 export default function About() {
    return (

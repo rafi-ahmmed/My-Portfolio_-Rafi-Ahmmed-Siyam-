@@ -1,7 +1,8 @@
 import React from 'react';
 import { Code2, Server, Wrench } from 'lucide-react';
 import Image from 'next/image';
-import ContainerLayout from '../layout/ContainerLayout';
+import ContainerLayout from '@/components/layout/ContainerLayout';
+
 
 const skillGroups = [
    {
@@ -59,7 +60,7 @@ const skillGroups = [
    },
 ];
 
-export default function MySkills() {
+export default function Skills() {
    return (
       <ContainerLayout id="skills">
          {/* Heading section center kora hoyeche */}

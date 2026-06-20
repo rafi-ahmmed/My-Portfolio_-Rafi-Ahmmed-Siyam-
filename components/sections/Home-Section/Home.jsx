@@ -1,25 +1,28 @@
+'use client';
 import Image from 'next/image';
 import myImg from '@/public/squire.jpg';
-// import myImg from '@/public/squireblack.jpg';
-import { Button } from '../ui/button';
-import AnimatedIntro from '../common/AnimatedIntro';
-import SocialLinks from '../common/SocialLinks';
+import myImg2 from '@/public/bg-gray.jpg';
 import { Download, FolderKanban } from 'lucide-react';
-import ContainerLayout from '../layout/ContainerLayout';
+import AnimatedIntro from './AnimatedIntro';
+import SocialLinks from '@/components/common/SocialLinks';
+import ContainerLayout from '@/components/layout/ContainerLayout';
+import { Button } from '@/components/ui/button';
+import { useTheme } from 'next-themes';
 
 export default function Home() {
+   // const { theme, setTheme } = useTheme();
    return (
       <ContainerLayout id={'home'}>
          <section className=" flex items-center overflow-hidden py-0 md:py-5 lg:py-10">
             <div className="w-300 mx-auto flex flex-col md:flex-row-reverse items-center justify-between gap-5 ">
-               {/* Image Section with Large Circular Background */}
                <div className="relative flex-1 flex justify-center items-center ">
                   {/* Large Circle - Second Image Style */}
-                  <div className="absolute w-66 h-66 md:w-105 md:h-105 bg-slate-900/70 rounded-full translate-x-10 opacity-50 block md:hidden lg:block"></div>
+                  <div className="absolute w-66 h-66 md:w-105 md:h-105 bg-slate-900/70 rounded-full translate-x-10 opacity-50 hidden md:hidden lg:block"></div>
 
                   {/* Image Container */}
                   <div className="relative z-10 w-70 h-70 md:w-105 md:h-105 rounded-full overflow-hidden border-10 md:border-15 border-slate-800 shadow-2xl">
                      <Image
+                        // src={theme === 'light' ? myImg2 : myImg}
                         src={myImg}
                         alt="Profile Picture"
                         fill

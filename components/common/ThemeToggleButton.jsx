@@ -15,12 +15,7 @@ export function ThemeToggleButton() {
    };
 
    return (
-      <Button variant="ghost" size="icon" onClick={toggleTheme} className="">
-         {/* <Sun className="absolute size-6 scale-0 rotate-90 text-amber-300 transition-all dark:scale-100 dark:rotate-0" /> */}
-         {/* <Moon
-            fill="currentColor"
-            className="size-6 text-blue-950 transition-all dark:scale-0 dark:-rotate-90"
-         /> */}
+      <Button variant="ghost" size="icon" onClick={toggleTheme} className="cursor-pointer">
          <IoSunny className=" size-6  text-yellow-400 dark:block hidden" />
          <FaMoon className="size-5 text-slate-900 dark:hidden block" />
 

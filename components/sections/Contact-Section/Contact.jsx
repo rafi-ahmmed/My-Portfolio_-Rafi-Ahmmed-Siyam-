@@ -1,8 +1,8 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
-import SocialLinks from '../common/SocialLinks';
-import ContactForm from '../common/ContactForm';
-import ContainerLayout from '../layout/ContainerLayout';
+import { Mail, Phone, MapPin } from 'lucide-react';
+import ContactForm from './ContactForm';
+import SocialLinks from '@/components/common/SocialLinks';
+import ContainerLayout from '@/components/layout/ContainerLayout';
 
 export default function Contact() {
    return (
