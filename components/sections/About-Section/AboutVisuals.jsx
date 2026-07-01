@@ -8,7 +8,7 @@ const AboutVisuals = () => {
          {/* Background Glow */}
          <div className="absolute -inset-4 bg-amber-500/5 dark:bg-amber-500/10 blur-3xl rounded-full"></div>
 
-         {/* Grid Container: Pashapashi soman width rakhar jonno */}
+        
          <div className="relative grid grid-cols-2 gap-6 items-stretch">
             {/* Left Box */}
             <motion.div

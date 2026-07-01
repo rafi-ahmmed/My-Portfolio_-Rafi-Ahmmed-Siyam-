@@ -1,0 +1,43 @@
+[
+   {
+      "id": 1,
+      "title": "Digital Wallet",
+      "description": "High-performance Full Stack digital wallet built with React/TypeScript, featuring secure operations and a sleek UI.",
+      "image": "https://i.ibb.co.com/rRzbt9DW/mustang-4250-1024x576.jpg",
+      "type": "Full Stack Project",
+      "tags": [
+         "React.js",
+         "TailwindCSS",
+         "TypeScript",
+         "Shadcn UI",
+         "MongoDB",
+         "Mongoose",
+         "Express.js"
+      ],
+      "clientLink": "#",
+      "serverLink": "#",
+      "liveLink": "#"
+   },
+   {
+      "id": 2,
+      "title": "LivingNest",
+      "description": "A room rental platform featuring user authentication and separate dashboards for users, members, and admins.",
+      "image": "https://i.ibb.co.com/rRzbt9DW/mustang-4250-1024x576.jpg",
+      "type": "Full Stack Project",
+      "tags": ["React.js", "TailwindCSS", "Firebase", "MongoDB", "Express.js"],
+      "clientLink": "#",
+      "serverLink": "#",
+      "liveLink": "#"
+   },
+   {
+      "id": 3,
+      "title": "CarePoint",
+      "description": "CarePoint is a scalable platform for volunteer management, built with React, TailwindCSS, Firebase, Express, and MongoDB!",
+      "image": "https://i.ibb.co.com/rRzbt9DW/mustang-4250-1024x576.jpg",
+      "type": "Fullstack Website",
+      "tags": ["React", "Node.js", "Express", "MongoDB"],
+      "clientLink": "#",
+      "serverLink": "#",
+      "liveLink": "#"
+   }
+]

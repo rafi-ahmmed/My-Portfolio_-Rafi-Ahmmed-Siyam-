@@ -1,7 +1,8 @@
 'use client';
-import { ExternalLink, Layout, Server } from 'lucide-react';
+import { ExternalLink, Layout, List, Server } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'motion/react';
+import Link from 'next/link';
 
 const ProjectCard = ({ project }) => {
    return (
@@ -11,20 +12,22 @@ const ProjectCard = ({ project }) => {
          }}
          transition={{
             duration: 0.1,
-            ease:'easeInOut'
+            ease: 'easeInOut',
          }}
-         className="bg-gray-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col hover:border-amber-500/30 transition-all group"
+         className="bg-gray-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col hover:border-amber-500/30 transition-all group "
       >
          {/* Project Image */}
-         <div className="relative overflow-hidden aspect-video ">
-            <Image
-               src={project?.image}
-               alt={project?.title}
-               fill
-               className="object-cover object-top pt-2.5 px-2.5 rounded-t-[20px] "
-               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            />
-         </div>
+         <Link href={`/projects/${project.id}`}>
+            <div className="relative overflow-hidden aspect-video cursor-pointer">
+               <Image
+                  src={project?.image}
+                  alt={project?.title}
+                  fill
+                  className="object-cover object-top pt-2.5 px-2.5 rounded-t-[20px] "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+               />
+            </div>
+         </Link>
 
          {/* Project Content */}
          <div className="p-5 flex flex-col grow">
@@ -62,21 +65,12 @@ const ProjectCard = ({ project }) => {
                >
                   <ExternalLink size={14} /> Live
                </a>
-
                <a
-                  href={project?.clientLink}
-                  title="Client Code"
-                  className="flex-1 flex items-center justify-center gap-1.5 border border-slate-700 text-slate-300 hover:border-amber-500/50 hover:text-amber-500 font-semibold py-2 rounded-lg transition-all text-[11px]"
-               >
-                  <Layout size={14} /> Client
-               </a>
-
-               <a
-                  href={project?.serverLink}
+                  href={`/projects/${project.id}`}
                   title="Server Code"
-                  className="flex-1 flex items-center justify-center gap-1.5 border border-slate-700 text-slate-300 hover:border-amber-500/50 hover:text-amber-500 font-semibold py-2 rounded-lg transition-all text-[11px]"
+                  className="flex-1 flex items-center justify-center gap-1.5 bg-amber-500/5 border border-amber-500/20 text-amber-500 hover:bg-amber-500/10 hover:border-amber-500/40 font-semibold py-2 rounded-lg transition-all text-[11px]"
                >
-                  <Server size={14} /> Server
+                  <List size={14} /> Details
                </a>
             </div>
          </div>

@@ -2,7 +2,7 @@ import { useSession } from 'next-auth/react';
 
 export default function useValidUser() {
    const session = useSession();
-   console.log(session);
+   // console.log(session);
    const validEmail = [
       'rafi.ahmmed920@gmail.com',
       'rafiahmmed920@gmail.com',

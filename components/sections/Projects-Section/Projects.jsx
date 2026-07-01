@@ -1,9 +1,11 @@
 import { Suspense } from 'react';
 import ContainerLayout from '../../layout/ContainerLayout';
 import ProjectList from './ProjectList';
+import projects from "@/data/project.json"
 
 // const projects = [
 //    {
+//       id: 1,
 //       title: 'Digital Wallet',
 //       description:
 //          'High-performance Full Stack digital wallet built with React/TypeScript, featuring secure operations and a sleek UI.',
@@ -23,6 +25,7 @@ import ProjectList from './ProjectList';
 //       liveLink: '#',
 //    },
 //    {
+//       id: 2,
 //       title: 'LivingNest',
 //       description:
 //          'A room rental platform featuring user authentication and separate dashboards for users, members, and admins.',
@@ -34,10 +37,11 @@ import ProjectList from './ProjectList';
 //       liveLink: '#',
 //    },
 //    {
+//       id: 3,
 //       title: 'CarePoint',
 //       description:
 //          'CarePoint is a scalable platform for volunteer management, built with React, TailwindCSS, Firebase, Express, and MongoDB!',
-//       image: 'https://i.ibb.co.com/PvJw5z0m/packge.jpg',
+//       image: 'https://i.ibb.co.com/rRzbt9DW/mustang-4250-1024x576.jpg',
 //       type: 'Fullstack Website',
 //       tags: ['React', 'Node.js', 'Express', 'MongoDB'],
 //       clientLink: '#',
@@ -62,10 +66,7 @@ export default async function Projects() {
                </p>
             </div>
 
-            {/* <Suspense fallback={'Projects Loading'}>
-               <ProjectList />
-            </Suspense> */}
-            <ProjectList />
+            <ProjectList projects={projects} />
          </div>
       </ContainerLayout>
    );

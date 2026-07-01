@@ -1,12 +1,15 @@
 import { Facebook, Github, Mail } from 'lucide-react';
 import React from 'react';
 import { FaLinkedin } from 'react-icons/fa';
+import { FiTwitter } from 'react-icons/fi';
 
-const SocialLinks = ({py=""}) => {
+const SocialLinks = ({ py = '' }) => {
    return (
-      <div className={`flex items-center gap-3.5 justify-center md:justify-start ${py}`}>
+      <div
+         className={`flex items-center gap-3.5 justify-center md:justify-start ${py}`}
+      >
          <a
-            href="https://github.com/Rafi-Ahmmed-Siyam"
+            href="https://github.com/rafi-ahmmed"
             target="_blank"
             className="w-10 h-10 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:text-amber-500 hover:border-amber-500/50 transition-all"
          >
@@ -30,10 +33,12 @@ const SocialLinks = ({py=""}) => {
          </a>
 
          <a
-            href="mailto:rafi.ahmmed920@gmail.com"
+            href="https://x.com/RafiAhmmed920"
+            target='_blank'
             className="w-10 h-10 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-slate-400 hover:text-amber-500 hover:border-amber-500/50 transition-all"
          >
-            <Mail size={24} />
+            {/* <Mail size={24} /> */}
+            <FiTwitter size={20} />
          </a>
       </div>
    );

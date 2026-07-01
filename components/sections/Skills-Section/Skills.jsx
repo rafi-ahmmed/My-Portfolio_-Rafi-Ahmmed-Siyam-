@@ -3,15 +3,17 @@ import { Code2, Server, Wrench } from 'lucide-react';
 import Image from 'next/image';
 import ContainerLayout from '@/components/layout/ContainerLayout';
 
-
 const skillGroups = [
    {
       title: 'frontend',
-
       skills: [
          { name: 'HTML', url: 'https://i.ibb.co.com/3m8HYVhz/html-5.png' },
          { name: 'CSS', url: 'https://i.ibb.co.com/PZXj68h5/css-3.png' },
          { name: 'JavaScript', url: 'https://i.ibb.co.com/Xx2Hgv4Z/js.png' },
+         {
+            name: 'TypeScript',
+            url: 'https://i.ibb.co.com/rRGZ6GpG/icons8-typescript-96.png',
+         },
          {
             name: 'React.js',
             url: 'https://i.ibb.co.com/b5J9BdF8/react-JS.png',
@@ -20,11 +22,14 @@ const skillGroups = [
             name: 'Next.js',
             url: 'https://i.ibb.co.com/vx4g4nPC/icons8-nextjs-100.png',
          },
+         {
+            name: 'TanStackQuery',
+            url: 'https://i.ibb.co.com/VpVKQ5cC/logo-color-600.png',
+         },
       ],
    },
    {
       title: 'backend',
-
       skills: [
          { name: 'Node.js', url: 'https://i.ibb.co.com/qYPZYsLJ/node-js.png' },
          {
@@ -38,6 +43,14 @@ const skillGroups = [
          {
             name: 'MongoDB',
             url: 'https://i.ibb.co.com/wF0qmfR5/icons8-mongodb-96.png',
+         },
+         {
+            name: 'Postgresql',
+            url: 'https://i.ibb.co.com/bgGHn42B/icons8-postgresql-96.png',
+         },
+         {
+            name: 'Prisma',
+            url: 'https://i.ibb.co.com/kd78cRZ/icons8-prisma-orm-100.png',
          },
       ],
    },
@@ -55,6 +68,10 @@ const skillGroups = [
          {
             name: 'Vercel',
             url: 'https://i.ibb.co.com/xqqn73Cs/icons8-vercel-100.png',
+         },
+         {
+            name: 'Postman',
+            url: 'https://i.ibb.co.com/Z1MvP2jf/icons8-postman-inc-96.png',
          },
       ],
    },
@@ -109,8 +126,8 @@ export default function Skills() {
                            <div className="w-10 h-10 flex items-center justify-center relative">
                               {skill.url ? (
                                  <Image
-                                    width={32}
-                                    height={32}
+                                    width={38}
+                                    height={38}
                                     src={skill.url}
                                     alt={skill.name}
                                     className="w-8 h-8 object-contain group-hover:scale-110 transition-transform"
@@ -119,7 +136,7 @@ export default function Skills() {
                                  <div className="w-8 h-8 bg-slate-700 rounded animate-pulse"></div>
                               )}
                            </div>
-                           <span className="text-[10px] md:text-[11px] text-slate-400 font-medium text-center group-hover:text-white transition-colors">
+                           <span className="text-[10px] md:text-[13px] text-slate-400 font-medium text-center group-hover:text-white transition-colors">
                               {skill.name}
                            </span>
                         </div>
